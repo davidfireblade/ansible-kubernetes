@@ -8,6 +8,14 @@
   connection: ssh
 
   tasks:
+     - name: Install required packaged
+       apt:
+         name: "{{ item }}"
+         state: present
+       with_items:
+         - acl
+         - python3-pip
+
      - name: Create containerd config file
        file:
          path: "/etc/modules-load.d/containerd.conf"

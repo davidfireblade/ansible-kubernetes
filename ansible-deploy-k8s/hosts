@@ -1,6 +1,5 @@
 [masters]
-master ansible_host=IPADDRESS ansible_user=root
+master ansible_host=10.102.42.165 ansible_user=labuser
 
 [workers]
-worker1 ansible_host=IPADDRESS ansible_user=root
-worker2 ansible_host=IPADDRESS ansible_user=root
+worker1 ansible_host=10.102.43.168 ansible_user=labuser
